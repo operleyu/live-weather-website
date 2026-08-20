@@ -107,7 +107,7 @@ cities = [ # Each cities for selection box
 ]
 city = st.selectbox("Select a city or type out here!", cities) # Makes selectbox possible
 
-if st.button("Get Weather"): # Gets the live weather data when the user selects a city and pressed "Get Weather"
+if st.button("Get Weather"): # Gets the live weather data when the user selects a city and presses "Get Weather"
     if not api_key:
         st.error("Please enter your API key!")
     elif not city:
