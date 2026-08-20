@@ -122,7 +122,7 @@ if st.button("Get Weather"): # Gets the live weather data when the user selects 
             if response.status_code == 200:
                 temp = data["main"]["temp"]
                 humidity = data["main"]["humidity"]
-                description = data["weather"][0]["description"].capitalize()
+                description = data["weather"][0]["description"].title()
 
                 st.success(f"Weather in {city}:")
                 st.metric(label="Temperature", value=f"{temp}°C")
