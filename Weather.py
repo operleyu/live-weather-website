@@ -13,7 +13,7 @@ def get_base64_video(path): # Converts the MP4 into base64 so it can be used wit
 VIDEO_PATH = os.path.join(os.path.dirname(__file__), "F16.mp4") # Finds the video of F16.mp4 and makes it a background
 video_base64 = get_base64_video(VIDEO_PATH)
 
-st.markdown( # Changes the main title font
+st.markdown( # Changes the main title font using CSS
     """
     <style>
     .stApp h1 {
@@ -51,7 +51,7 @@ st.markdown( # Changes the main title font
     unsafe_allow_html=True,
 )
                  
-components.html( # - Autoplays, loop, and mutes and forces the video to play where it is exactly on the page
+components.html( # - Autoplays, loop, and mutes and forces the video to play where it is exactly on the page using HTML5 and CSS
     f"""
     <video autoplay loop muted playsinline 
         style="position:fixed; top:0; left:0; width:100vw; height:100vh; object-fit:cover; z-index:-2;">
