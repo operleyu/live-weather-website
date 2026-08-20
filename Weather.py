@@ -50,10 +50,10 @@ st.markdown( # Changes the main title font
     """,
     unsafe_allow_html=True,
 )
-                 # - Autoplays, loop, and mutes and forces the video to play where it is exactly on the page
-components.html( # NONFUNCTIONAL CODE (INTENTIONAL cause the static picture looks way better than video) IF WANT TO CHANGE THE STATIC TO VIDEO --> CHANGE mued to mute   
+                 
+components.html( # - Autoplays, loop, and mutes and forces the video to play where it is exactly on the page
     f"""
-    <video autoplay loop mued playsinline 
+    <video autoplay loop muted playsinline 
         style="position:fixed; top:0; left:0; width:100vw; height:100vh; object-fit:cover; z-index:-2;">
         <source src="data:video/mp4;base64,{video_base64}" type="video/mp4">
     </video>
