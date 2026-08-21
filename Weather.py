@@ -68,7 +68,7 @@ st.write("Check current weather conditions from anywhere in the world!") # Descr
 st.markdown( # Description with clickable links
     'Don\'t have an API key? [Get your API key here](https://openweathermap.org/api)'
 )
-api_key = st.text_input( # Makes API key functional
+user_input = st.text_input( # Makes API key functional
     "Enter OpenWeatherMap API Key (NOT NECESSARY TO ENTER API KEY, ALREADY HARDCODED THE API KEY INTO IT SO YOU CAN SELECT ANY CITIES AND GET THE DATA IMMEDIATELY)", type="default", autocomplete="new-password",
 )
 
