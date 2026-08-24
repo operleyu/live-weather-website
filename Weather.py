@@ -69,7 +69,7 @@ st.markdown( # Description with clickable links
     'Don\'t have an API key? [Get your API key here](https://openweathermap.org/api)'
 )
 user_input = st.text_input( # Makes API key functional
-    "Enter OpenWeatherMap API Key (Not necessary, already secure using via st.secrets, can get data immediately)", type="default", autocomplete="new-password",
+    "Enter OpenWeatherMap API Key (Not necessary, already secure using st.secrets, can get data immediately)", type="default", autocomplete="new-password",
 )
 
 if user_input: # Codes the API key using the Streamlit Secrets
