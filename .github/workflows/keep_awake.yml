@@ -1,0 +1,13 @@
+name: Wake Streamlit App # Names the script
+
+on: # Tells the script to wake up
+  schedule: 
+    - cron: "0 */4 * * *"
+  workflow_dispatch: # Adds a manual start button on Github
+
+jobs:
+  wake_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Lightweight Ping
+        run: curl -I https://streamlit.app # Sends a quick web request to keep the site awake
